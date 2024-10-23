@@ -190,7 +190,7 @@ export default class App extends Component {
 }
 async componentDidMount() {
     this.props.setprogress(10);
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=ace56ad9cdb1468f93f058ba18cd735b`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=ace56ad9cdb1468f93f058ba18cd735b`;
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -217,11 +217,11 @@ async componentDidMount() {
   }
 
 static defaultProps = {
-    country:'in',
+    //country:'in',
     category:'general',
 }
 static propTypes ={
-    country:PropTypes.string,
+    //country:PropTypes.string,
     category:PropTypes.string,
 }
 }
