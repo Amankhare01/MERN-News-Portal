@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import App  from '../App'
 import Navbar from './Navbar'
-import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import { Route,Routes} from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar'
 export default class News extends Component {
 
